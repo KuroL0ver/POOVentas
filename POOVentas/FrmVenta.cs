@@ -3,10 +3,22 @@
     public partial class FrmVenta : Form
     {
         List<ConceptodeVenta> conceptos;
-        public FrmVenta()
+        public FrmVenta(string tipoVenta)
         {
             InitializeComponent();
             conceptos = new List<ConceptodeVenta>();
+
+
+            if (tipoVenta == "credito")
+            {
+                this.Text = "Venta de Credito";
+            }
+            else 
+            {
+                this.Text = "Venta de Contado";
+            }
+
+
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
