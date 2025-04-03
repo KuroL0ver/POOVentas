@@ -65,6 +65,7 @@
             DgvConceptos.RowHeadersWidth = 51;
             DgvConceptos.Size = new Size(916, 376);
             DgvConceptos.TabIndex = 2;
+            DgvConceptos.TabStop = false;
             // 
             // btnAgregar
             // 
@@ -81,7 +82,7 @@
             TxtCantidad.Location = new Point(305, 40);
             TxtCantidad.Name = "TxtCantidad";
             TxtCantidad.Size = new Size(125, 27);
-            TxtCantidad.TabIndex = 4;
+            TxtCantidad.TabIndex = 0;
             // 
             // TxtDescripcion
             // 
@@ -89,7 +90,7 @@
             TxtDescripcion.Multiline = true;
             TxtDescripcion.Name = "TxtDescripcion";
             TxtDescripcion.Size = new Size(483, 71);
-            TxtDescripcion.TabIndex = 5;
+            TxtDescripcion.TabIndex = 1;
             // 
             // label3
             // 
@@ -105,7 +106,7 @@
             TxtValorUnitario.Location = new Point(305, 193);
             TxtValorUnitario.Name = "TxtValorUnitario";
             TxtValorUnitario.Size = new Size(125, 27);
-            TxtValorUnitario.TabIndex = 4;
+            TxtValorUnitario.TabIndex = 2;
             // 
             // FrmVenta
             // 

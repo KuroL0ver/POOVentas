@@ -41,7 +41,7 @@
             TxtCantidad.Text = string.Empty;
             TxtDescripcion.Text = string.Empty;
             TxtValorUnitario.Text = string.Empty;
-
+            TxtCantidad.Focus();
 
         }
 
