@@ -41,6 +41,7 @@
             TxtCantidad.Text = string.Empty;
             TxtDescripcion.Text = string.Empty;
             TxtValorUnitario.Text = string.Empty;
+            TxtTotal.Text = _venta.Total.ToString();
             TxtCantidad.Focus();
 
         }

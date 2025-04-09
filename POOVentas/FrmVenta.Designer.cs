@@ -36,6 +36,7 @@
             TxtDescripcion = new TextBox();
             label3 = new Label();
             TxtValorUnitario = new TextBox();
+            TxtTotal = new TextBox();
             ((System.ComponentModel.ISupportInitialize)DgvConceptos).BeginInit();
             SuspendLayout();
             // 
@@ -60,7 +61,7 @@
             // DgvConceptos
             // 
             DgvConceptos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DgvConceptos.Location = new Point(48, 285);
+            DgvConceptos.Location = new Point(41, 253);
             DgvConceptos.Name = "DgvConceptos";
             DgvConceptos.RowHeadersWidth = 51;
             DgvConceptos.Size = new Size(916, 376);
@@ -108,11 +109,22 @@
             TxtValorUnitario.Size = new Size(125, 27);
             TxtValorUnitario.TabIndex = 2;
             // 
+            // TxtTotal
+            // 
+            TxtTotal.Location = new Point(814, 653);
+            TxtTotal.Name = "TxtTotal";
+            TxtTotal.ReadOnly = true;
+            TxtTotal.Size = new Size(125, 27);
+            TxtTotal.TabIndex = 4;
+            TxtTotal.Text = "0.00";
+            TxtTotal.TextAlign = HorizontalAlignment.Center;
+            // 
             // FrmVenta
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1016, 701);
+            Controls.Add(TxtTotal);
             Controls.Add(TxtDescripcion);
             Controls.Add(TxtValorUnitario);
             Controls.Add(TxtCantidad);
@@ -139,5 +151,6 @@
         private TextBox TxtDescripcion;
         private Label label3;
         private TextBox TxtValorUnitario;
+        private TextBox TxtTotal;
     }
 }
