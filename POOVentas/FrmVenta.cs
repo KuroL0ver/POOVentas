@@ -50,5 +50,22 @@
         {
 
         }
+
+        private void BtnEfectivo_Click(object sender, EventArgs e)
+        {
+            FormaPagoEfectivo efectivo = new FormaPagoEfectivo();
+            AplicarPago(efectivo);
+
+        }
+        void AplicarPago(IFormaPago formaPago)
+        {
+            formaPago.Cobrar(_venta.Total);
+        }
+
+        private void BtnTarjeta_Click(object sender, EventArgs e)
+        {
+            FormaPagoTarjeta tarjeta = new FormaPagoTarjeta();
+            AplicarPago(tarjeta);
+        }
     }
 }

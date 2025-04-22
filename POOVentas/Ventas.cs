@@ -2,14 +2,14 @@
 {
     internal abstract class Ventas
     {
-        public decimal Total 
-        
-        { 
-            get 
+        public decimal Total
+
+        {
+            get
             {
-             return CalcularTotal();
+                return CalcularTotal();
             }
-        
+
         }
 
         //Lista con constructor, los Conceptos son los Productos
@@ -27,5 +27,7 @@
             }
             return total;
         }
+
+
     }
 }

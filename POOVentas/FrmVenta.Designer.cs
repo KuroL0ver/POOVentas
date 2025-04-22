@@ -37,6 +37,8 @@
             label3 = new Label();
             TxtValorUnitario = new TextBox();
             TxtTotal = new TextBox();
+            BtnEfectivo = new Button();
+            BtnTarjeta = new Button();
             ((System.ComponentModel.ISupportInitialize)DgvConceptos).BeginInit();
             SuspendLayout();
             // 
@@ -119,11 +121,33 @@
             TxtTotal.Text = "0.00";
             TxtTotal.TextAlign = HorizontalAlignment.Center;
             // 
+            // BtnEfectivo
+            // 
+            BtnEfectivo.Location = new Point(463, 652);
+            BtnEfectivo.Name = "BtnEfectivo";
+            BtnEfectivo.Size = new Size(94, 29);
+            BtnEfectivo.TabIndex = 5;
+            BtnEfectivo.Text = "Efectivo";
+            BtnEfectivo.UseVisualStyleBackColor = true;
+            BtnEfectivo.Click += BtnEfectivo_Click;
+            // 
+            // BtnTarjeta
+            // 
+            BtnTarjeta.Location = new Point(573, 652);
+            BtnTarjeta.Name = "BtnTarjeta";
+            BtnTarjeta.Size = new Size(94, 29);
+            BtnTarjeta.TabIndex = 6;
+            BtnTarjeta.Text = "Tarjeta";
+            BtnTarjeta.UseVisualStyleBackColor = true;
+            BtnTarjeta.Click += BtnTarjeta_Click;
+            // 
             // FrmVenta
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1016, 701);
+            Controls.Add(BtnTarjeta);
+            Controls.Add(BtnEfectivo);
             Controls.Add(TxtTotal);
             Controls.Add(TxtDescripcion);
             Controls.Add(TxtValorUnitario);
@@ -152,5 +176,7 @@
         private Label label3;
         private TextBox TxtValorUnitario;
         private TextBox TxtTotal;
+        private Button BtnEfectivo;
+        private Button BtnTarjeta;
     }
 }
