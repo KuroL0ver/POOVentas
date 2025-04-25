@@ -18,5 +18,11 @@ namespace POOVentas
             FrmVenta frmVenta = new FrmVenta("credito");
             frmVenta.ShowDialog();
         }
+
+        private void btnVentaCortesia_Click(object sender, EventArgs e)
+        {
+            FrmVenta frmVenta = new FrmVenta("cortesia");
+            frmVenta.ShowDialog();
+        }
     }
 }

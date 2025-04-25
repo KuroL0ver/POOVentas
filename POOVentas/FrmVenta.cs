@@ -14,12 +14,21 @@
             {
                 _venta = new VentaCredito();
                 this.Text = "Venta de Credito";
+                TxtCortesia.Text= "Nope";
             }
-            else
+            else if (tipoVenta == "contado")
             {
                 _venta = new VentaContado();
                 this.Text = "Venta de Contado";
+                TxtCortesia.Text = "Nope";
             }
+            else
+            {
+                _venta = new VentaCortesia();
+                this.Text = "Venta de Cortesia";
+                TxtCortesia.Text = "Sí";
+            }
+
 
 
         }
@@ -66,6 +75,39 @@
         {
             FormaPagoTarjeta tarjeta = new FormaPagoTarjeta();
             AplicarPago(tarjeta);
+        }
+
+
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtCortesia_TextChanged(object sender, EventArgs e)
+        {
+            if (TxtCortesia.Text.ToLower() == "sí")
+            {
+                _venta = new VentaCortesia();
+                this.Text = "Venta de Cortesía";
+
+            }
+            else
+            {
+                _venta = new VentaContado(); // O el tipo de venta predeterminado
+                this.Text = "Venta de Contado";
+            }
+
+        }
+
+        private void TxtDescripcion_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -39,6 +39,8 @@
             TxtTotal = new TextBox();
             BtnEfectivo = new Button();
             BtnTarjeta = new Button();
+            label4 = new Label();
+            TxtCortesia = new TextBox();
             ((System.ComponentModel.ISupportInitialize)DgvConceptos).BeginInit();
             SuspendLayout();
             // 
@@ -59,6 +61,7 @@
             label2.Size = new Size(87, 20);
             label2.TabIndex = 1;
             label2.Text = "Descripción";
+            label2.Click += label2_Click;
             // 
             // DgvConceptos
             // 
@@ -94,6 +97,7 @@
             TxtDescripcion.Name = "TxtDescripcion";
             TxtDescripcion.Size = new Size(483, 71);
             TxtDescripcion.TabIndex = 1;
+            TxtDescripcion.TextChanged += TxtDescripcion_TextChanged;
             // 
             // label3
             // 
@@ -141,11 +145,31 @@
             BtnTarjeta.UseVisualStyleBackColor = true;
             BtnTarjeta.Click += BtnTarjeta_Click;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(90, 652);
+            label4.Name = "label4";
+            label4.Size = new Size(63, 20);
+            label4.TabIndex = 7;
+            label4.Text = "Cortesía";
+            label4.Click += label4_Click;
+            // 
+            // TxtCortesia
+            // 
+            TxtCortesia.Location = new Point(174, 649);
+            TxtCortesia.Name = "TxtCortesia";
+            TxtCortesia.Size = new Size(125, 27);
+            TxtCortesia.TabIndex = 8;
+            TxtCortesia.TextChanged += TxtCortesia_TextChanged;
+            // 
             // FrmVenta
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1016, 701);
+            Controls.Add(TxtCortesia);
+            Controls.Add(label4);
             Controls.Add(BtnTarjeta);
             Controls.Add(BtnEfectivo);
             Controls.Add(TxtTotal);
@@ -178,5 +202,7 @@
         private TextBox TxtTotal;
         private Button BtnEfectivo;
         private Button BtnTarjeta;
+        private Label label4;
+        private TextBox TxtCortesia;
     }
 }
