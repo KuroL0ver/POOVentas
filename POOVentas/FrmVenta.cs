@@ -15,18 +15,24 @@
                 _venta = new VentaCredito();
                 this.Text = "Venta de Credito";
                 TxtCortesia.Text= "Nope";
+                BtnTarjeta.Visible = false;
+                BtnEfectivo.Visible = false;
             }
             else if (tipoVenta == "contado")
             {
                 _venta = new VentaContado();
                 this.Text = "Venta de Contado";
                 TxtCortesia.Text = "Nope";
+                BtnTarjeta.Visible = true;
+                BtnEfectivo.Visible = true;
             }
             else
             {
                 _venta = new VentaCortesia();
                 this.Text = "Venta de Cortesia";
                 TxtCortesia.Text = "Sí";
+                BtnTarjeta.Visible = false;
+                BtnEfectivo.Visible = false;
             }
 
 
